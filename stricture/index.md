@@ -1,0 +1,15 @@
+app
+    -- components
+        -- layout
+            -- header
+                - logo
+                - navbar
+                - header
+            -- footer
+                - footer
+        -- Home
+            - slider 
+    -- pages
+        -- home
+        -- Contact
+        -- About
