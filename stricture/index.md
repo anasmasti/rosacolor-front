@@ -8,8 +8,57 @@ app
             -- footer
                 - footer
         -- Home
-            - slider 
+            - carousel 
+            - jumbotron
+            - card
+            - image gallery
+            - map card
+            - partners auto slider
+
+        -- About
+            - side gallery background
+            -- Category 1 : About
+                - cards
+            -- Category 2 : Why Rosa?
+                - poster
+            -- Category 3 : Who are we?
+                - jumbotron
+                - cards
+        
+        --Contact
+            - title
+            - form
+            - contact card
+
+        --Products
+            -- Main page
+                - title
+                - illustration
+                - products wheel
+                -- Product description page
+                    - title
+                    - products wheel
+                    - product card
+                    - back button
+                    - view button
+                    -- Products viewer
+                        - title
+                        - back button
+                        - slider
+                        - view button
+                        -- Product description
+                            - title
+                            - back button
+                            - products image
+                            - product description
+
     -- pages
-        -- home
+        -- Menu
+        -- Home
         -- Contact
         -- About
+        -- Products
+            -- Main page
+                -- Product description page
+                    -- Products viewer
+                        -- Product description
