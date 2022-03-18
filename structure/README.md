@@ -16,25 +16,24 @@
     			- shared
     				- social media links
     				- map card
+						- cards
+							- main-card
+						- titles
+							- title
     				- buttons
     					- main-button
     					- back-button
     					- menu-button
-
+        
         - Home
             - carousel
             - jumbotron
-            - card
             - gallery
             - partners-slider
 
         - About
             - about-us
-            - Why-us
-                - poster
-            - Who-are-we
-                - jumbotron
-                - cards
+							- jumbotron
 
         - Contact
             - title
@@ -69,7 +68,7 @@
     				- index
         - About
     				- index
-        - Products
+        - Product
     				- [id]
     				- index
     			- index
