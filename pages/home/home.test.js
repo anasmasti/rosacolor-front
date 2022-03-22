@@ -1,7 +1,7 @@
-// import Home from './home.js'
+import { fetchFakePostes } from "../../services/fake-posts/fetchFakePostes";
 
-// describe("Test home comonent", () => {
-//   it("Should return true", () => {
-//       expect(Home.throwTrueIfItsJoke('Joke')).toBe(true)
-//   });
-// });
+describe("Test home comonent", () => {
+  it("Should return true", () => {
+      expect(fetchFakePostes()).toBe(true)
+  });
+});
