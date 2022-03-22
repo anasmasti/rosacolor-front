@@ -12,10 +12,14 @@
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.49.8"
+    "react-icons": "^4.3.1",
+    "sass": "^1.49.8",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
+    "cypress": "^9.5.2",
     "eslint": "8.9.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "jest": "^27.5.1"
   }
 }
