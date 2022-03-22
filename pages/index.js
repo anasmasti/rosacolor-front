@@ -1,35 +1,13 @@
 import Head from "next/head";
-import React, { useEffect, useReducer, useState } from "react";
-import styles from "../styles/Home.module.scss";
-import { fetchFakePostes } from "../services/fake-posts/fetchFakePostes";
+import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 import { fetcher } from "../services/helper/fetcher";
+import Home from "./home/home";
+import styles from "../styles/Home.module.scss";
 
-function reducer(state, { type }) {
-  switch (type) {
-    case "joke":
-      return {
-        ...state,
-        name: "Ghoza",
-      };
-    case "not a joke":
-      return {
-        ...state,
-        name: "Rozacolor",
-      };
-    default:
-      return {
-        ...state,
-        name: "",
-      };
-  }
-}
 
-export default function Home() {
-  let initState = {
-    name: "",
-  };
-  const [state, dispatch] = useReducer(reducer, initState);
+export default function index() {
+  
   const [loanding, setLoading] = useState(true);
   const { data } = useSWR(
     "https://jsonplaceholder.typicode.com/posts",
@@ -39,18 +17,8 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      dispatch({ type: "joke" });
     }, 2000);
-    // fetchFakePostes();
   }, []);
-
-  function sayHello() {
-    return (
-      <h1 className={styles.title}>
-        Welcome to <a href="#">{state.name}.</a>
-      </h1>
-    );
-  }
 
   if (loanding)
     return (
@@ -68,13 +36,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {sayHello()}
-        <div>
+        
+        {/* <div>
           {data.map((post, index) => {
             return <h3 key={index}>{post.title}</h3>;
           })}
-        </div>
+        </div> */}
+        <Home />
       </main>
+
+
     </div>
   );
 }

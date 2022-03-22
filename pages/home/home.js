@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "../../styles/Home.module.scss";
 
 export default function Home() {
-  function throwTrueIfItsJoke(something) {
-    if (something == "Joke") return true;
-    if (something != "Joke") return false;
-  }
-  return <div>home page</div>;
+  return (
+    <h1 className={styles.title}>
+      Welcome to <span>Rosacolor</span>
+    </h1>
+  );
 }
