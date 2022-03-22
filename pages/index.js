@@ -1,6 +1,9 @@
 import Head from "next/head";
-import { useEffect, useReducer } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import styles from "../styles/Home.module.scss";
+import { fetchFakePostes } from "../services/fake-posts/fetchFakePostes";
+import useSWR from "swr";
+import { fetcher } from "../services/helper/fetcher";
 
 function reducer(state, { type }) {
   switch (type) {
@@ -27,10 +30,19 @@ export default function Home() {
     name: "",
   };
   const [state, dispatch] = useReducer(reducer, initState);
+  const [loanding, setLoading] = useState(true);
+  const { data } = useSWR(
+    "https://jsonplaceholder.typicode.com/posts",
+    fetcher
+  );
 
   useEffect(() => {
-    dispatch({ type: "joke" });
-  });
+    setTimeout(() => {
+      setLoading(false);
+      dispatch({ type: "joke" });
+    }, 2000);
+    // fetchFakePostes();
+  }, []);
 
   function sayHello() {
     return (
@@ -40,6 +52,13 @@ export default function Home() {
     );
   }
 
+  if (loanding)
+    return (
+      <>
+        <h1>Loading...</h1>
+      </>
+    );
+
   return (
     <div className={styles.container}>
       <Head>
@@ -48,7 +67,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>{sayHello()}</main>
+      <main className={styles.main}>
+        {sayHello()}
+        <div>
+          {data.map((post, index) => {
+            return <h3 key={index}>{post.title}</h3>;
+          })}
+        </div>
+      </main>
     </div>
   );
 }
