@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.scss";
 export default function index() {
   
   const [loanding, setLoading] = useState(true);
-  const { data } = useSWR(
+  const { data, error } = useSWR(
     "https://jsonplaceholder.typicode.com/posts",
     fetcher
   );
@@ -44,8 +44,6 @@ export default function index() {
         </div> */}
         <Home />
       </main>
-
-
     </div>
   );
 }
