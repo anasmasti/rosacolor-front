@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 import { fetcher } from "../services/helper/fetcher";
-import Home from "./home/home";
+import Home from "./home/home.jsx";
 import styles from "../styles/Home.module.scss";
 
 

@@ -1,9 +1,9 @@
-import { render, screen, waitFor } from "@testing-library/react";
-import Home from "./home.js";
+import { render } from "@testing-library/react";
+import Home from "./home.jsx";
 
 describe("Test home comonent", () => {
   it("Home component should return welcome te", async () => {
     const { getByText } = render(<Home />);
-    expect(getByText("Welcome to"));
+    expect(getByText("Welcome to")).not.toBeNull();
   });
 });
