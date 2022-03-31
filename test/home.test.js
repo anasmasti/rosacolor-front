@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import Home from "./home.jsx";
+import Home from "../pages/home/home.jsx";
 
 describe("Test home comonent", () => {
   it("Home component should return welcome te", async () => {
