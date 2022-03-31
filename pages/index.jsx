@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import useSWR from "swr";
 import { fetcher } from "../services/helper/fetcher";
 import Home from "./home/home.jsx";
-import styles from "../styles/Home.module.scss";
 
 export default function index() {
   const [loanding, setLoading] = useState(true);
@@ -26,22 +25,13 @@ export default function index() {
     );
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Rosacolor</title>
         <meta name="description" content="Rosacolor" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        
-        {/* <div>
-          {data.map((post, index) => {
-            return <h3 key={index}>{post.title}</h3>;
-          })}
-        </div> */}
-        <Home />
-      </main>
+      <Home />
     </div>
   );
 }
