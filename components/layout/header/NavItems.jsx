@@ -9,12 +9,15 @@ export default function NavItems() {
   ];
 
   return (
-    <>
+    <div
+      className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
+      id="mobile-menu-3"
+    >
       <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
         {menuItems.map((item) => (
           <NavItem key={item.id} title={item.title} href={item.href} />
         ))}
       </ul>
-    </>
+    </div>
   );
 }
