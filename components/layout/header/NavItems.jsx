@@ -2,10 +2,26 @@ import NavItem from "./NavItem";
 
 export default function NavItems() {
   let menuItems = [
-    { id: 1, title: "Accueil", href: "/" },
-    { id: 2, title: "À propos de nous", href: "about" },
-    { id: 3, title: "Produits", href: "products" },
-    { id: 4, title: "Contact", href: "contact" },
+    {
+      id: 1,
+      title: "Accueil",
+      href: "/",
+    },
+    {
+      id: 2,
+      title: "À propos de nous",
+      href: "/about",
+    },
+    {
+      id: 3,
+      title: "Produits",
+      href: "/products",
+    },
+    {
+      id: 4,
+      title: "Contact",
+      href: "/contact",
+    },
   ];
 
   return (

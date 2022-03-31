@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function Copyright() {
+  let currentYear = new Date().getFullYear();
   return (
-    <div>Copyright</div>
-  )
+    <div className="text-center p-4">
+      &copy; {currentYear} Copyright Rosacolor
+    </div>
+  );
 }

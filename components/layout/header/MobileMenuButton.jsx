@@ -1,4 +1,4 @@
-import { MenuAlt3Icon } from "@heroicons/react/outline";
+import {HiMenuAlt3} from 'react-icons/hi'
 
 export default function MobileMenuButton() {
   return (
@@ -10,7 +10,7 @@ export default function MobileMenuButton() {
       aria-expanded="false"
     >
       <span className="sr-only">Open main menu</span>
-      <MenuAlt3Icon className="h-7 w-7 text-neutral-700" />
+      <HiMenuAlt3 className="h-7 w-7 text-neutral-700" />
     </button>
   );
 }
