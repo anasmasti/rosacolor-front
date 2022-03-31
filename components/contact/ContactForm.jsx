@@ -81,7 +81,7 @@ export default function ContactForm() {
                   <div className="mb-6">
                      <textarea
                         rows="6"
-                        placeholder="Your Message"
+                        placeholder="Entrer ton Message"
                         className="
                         w-full
                         rounded
