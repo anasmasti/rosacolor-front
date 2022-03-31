@@ -12,7 +12,7 @@ export default function NotFound() {
       <div className="mt-5">
         <Link href="/">
           <a className="w-full text-white bg-red-500 rounded border border-primary p-3 transition hover:bg-opacity-90">
-            Aller à la page d'accueil
+            Aller à la page d&apos;accueil
           </a>
         </Link>
       </div>
