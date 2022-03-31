@@ -5,9 +5,7 @@ import { fetcher } from "../services/helper/fetcher";
 import Home from "./home/home.jsx";
 import styles from "../styles/Home.module.scss";
 
-
 export default function index() {
-  
   const [loanding, setLoading] = useState(true);
   const { data, error } = useSWR(
     "https://jsonplaceholder.typicode.com/posts",
