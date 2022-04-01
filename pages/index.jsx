@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Home from "./home/home.jsx";
+import Home from "../components/home/Home";
 
 export default function index() {
   return (

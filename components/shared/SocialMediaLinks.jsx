@@ -1,6 +1,11 @@
-import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 
-export default function SocialMediaLinks() {
+export default function SocialMediaLinks({ theme }) {
   let socialMediaList = [
     {
       id: 1,
@@ -30,7 +35,11 @@ export default function SocialMediaLinks() {
         <a
           key={item.id}
           href={item.link}
-          className="flex justify-center items-center rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1"
+          className={`${
+            theme != "dark"
+              ? "border-white text-white"
+              : "border-neutral-600 text-neutral-600"
+          } flex justify-center items-center rounded-full border-2 leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1`}
         >
           {item.icon}
         </a>
