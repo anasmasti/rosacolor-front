@@ -11,7 +11,7 @@ export default function AboutServiceCard({ title, icon, content }) {
         <h2 className="focus:outline-none text-lg font-bold leading-tight text-gray-800">
           {title}
         </h2>
-        <p className="focus:outline-none text-base text-gray-600 leading-normal pt-2">
+        <p className="focus:outline-none text-base text-neutral-400 leading-normal pt-2">
           {content}
         </p>
       </div>

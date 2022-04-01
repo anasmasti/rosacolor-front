@@ -20,12 +20,12 @@ export default function Info() {
       content: [
         {
           id: 1,
-          header: "LUNDI Au VENDREDI",
+          header: "Lundi au Vendredi",
           body: "08:00 – 18:00",
         },
         {
           id: 2,
-          header: "SAMEDI - DIMANCHE",
+          header: "Samedi et Dimanche",
           body: "Fermé",
         },
       ],
@@ -53,7 +53,7 @@ export default function Info() {
       <div className="container mx-auto">
         <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl ">
           Quelques informations <br /> sur{" "}
-          <span className="underline decoration-red-500">Rosacolor</span>
+          <span className="underline decoration-red-500">nous</span>
         </h1>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-2">

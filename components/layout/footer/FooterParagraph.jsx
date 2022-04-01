@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FooterParagraph() {
   return (
     <div className="mb-6 text-neutral-400">
