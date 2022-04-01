@@ -1,32 +1,26 @@
+import AboutParagraph from "./AboutParagraph";
 import AboutTitle from "./AboutTitle";
 
 export default function AboutUs() {
+  let paragraphs = [
+    {
+      id: 1,
+      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit sequi ea? Odio ex doloribus laudantium fuga provident facilis nemo expedita accusantium vero veritatis culpa atque labore, qui ipsam. Ea.",
+    },
+    {
+      id: 2,
+      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit sequi ea? Odio ex doloribus laudantium fuga provident facilis nemo expedita accusantium vero veritatis culpa atque labore, qui ipsam. Ea. r sit amet consectetur adipisicing elit. Exercitationem impedit sequi ea? Odio ex doloribus laudantium fuga provident facilis nemo expedita accusantium vero veritatis culpa atque labore, qui ipsam. Ea. r sit amet consectetur adipisicing elit. Exercitationem impedit sequi ea? Odio ex doloribus laudantium fuga provident facilis nemo expedita accusantium vero veritatis culpa atque labore, qui ipsam. Ea.",
+    },
+    {
+      id: 3,
+      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit sequi ea? Odio ex doloribus laudantium fuga provident facilis nemo expedita accusantium vero veritatis culpa atque labore, qui ipsam. Ea.",
+    },
+  ];
+	
   return (
     <div className="max-w-8xl mx-auto container bg-white pt-16">
       <AboutTitle header="A propos de nous" title="Qui sommes-nous ?" />
-      <p className="text-xl text-neutral-500 px-10 sm:px-5 mt-6 mb-8">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cum
-        beatae deserunt ea fugit repellat laudantium magnam recusandae quae
-        laboriosam quidem maiores ex odit nostrum, impedit quibusdam iusto ipsum
-        voluptates. <br />
-        <br />
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cum
-        beatae deserunt ea fugit repellat laudantium magnam recusandae quae
-        laboriosam quidem maiores ex odit nostrum, impedit quibusdam iusto ipsum
-        voluptates. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Nulla cum beatae deserunt ea fugit repellat laudantium magnam recusandae
-        quae laboriosam quidem maiores ex odit nostrum, impedit quibusdam iusto
-        ipsum voluptates. Lorem ipsum dolor sit amet consectetur, adipisicing
-        elit. Nulla cum beatae deserunt ea fugit repellat laudantium magnam
-        recusandae quae laboriosam quidem maiores ex odit nostrum, impedit
-        quibusdam iusto ipsum voluptates.
-        <br />
-        <br />
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla cum
-        beatae deserunt ea fugit repellat laudantium magnam recusandae quae
-        laboriosam quidem maiores ex odit nostrum, impedit quibusdam iusto ipsum
-        voluptates.
-      </p>
+      <AboutParagraph content={paragraphs} />
     </div>
   );
 }
