@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import { PropTypes } from "prop-types";
 
 export default function SocialMediaLinks({ theme }) {
   let socialMediaList = [
@@ -47,3 +48,7 @@ export default function SocialMediaLinks({ theme }) {
     </div>
   );
 }
+
+SocialMediaLinks.propTypes = {
+  theme: PropTypes.string,
+};

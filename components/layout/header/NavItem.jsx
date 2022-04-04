@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PropTypes from "prop-types";
 
 export default function NavItem({ title, href }) {
   return (
@@ -14,3 +15,8 @@ export default function NavItem({ title, href }) {
     </li>
   );
 }
+
+NavItem.propTypes = {
+  title: PropTypes.string,
+  href: PropTypes.string,
+};

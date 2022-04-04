@@ -1,12 +1,11 @@
-
 export default function ContactForm() {
   return (
     <form>
-                  <div className="mb-6">
-                  <input
-                        type="text"
-                        placeholder="Entrer nom"
-                        className="
+      <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Entrer nom"
+          className="
                         w-full
                         rounded
                         py-3
@@ -19,13 +18,13 @@ export default function ContactForm() {
                         focus-visible:shadow-none
                         focus:border-white
                         "
-                        />
-                  </div>
-                  <div className="mb-6">
-                     <input
-                        type="text"
-                        placeholder="Entrer ton Prénom"
-                        className="
+        />
+      </div>
+      <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Entrer ton Prénom"
+          className="
                         w-full
                         rounded
                         py-3
@@ -38,13 +37,13 @@ export default function ContactForm() {
                         focus-visible:shadow-none
                         focus:border-white
                         "
-                        />
-                  </div>
-                  <div className="mb-6">
-                  <input
-                        type="email"
-                        placeholder="Entrer ton Email"
-                        className="
+        />
+      </div>
+      <div className="mb-6">
+        <input
+          type="email"
+          placeholder="Entrer ton Email"
+          className="
                         w-full
                         rounded
                         py-3
@@ -57,13 +56,13 @@ export default function ContactForm() {
                         focus-visible:shadow-none
                         focus:border-white
                         "
-                        />
-                  </div>
-                  <div className="mb-6">
-                  <input
-                        type="text"
-                        placeholder="Entrer ton Téléphone"
-                        className="
+        />
+      </div>
+      <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Entrer ton Téléphone"
+          className="
                         w-full
                         rounded
                         py-3
@@ -76,13 +75,13 @@ export default function ContactForm() {
                         focus-visible:shadow-none
                         focus:border-white
                         "
-                        />
-                  </div>
-                  <div className="mb-6">
-                     <textarea
-                        rows="6"
-                        placeholder="Entrer ton Message"
-                        className="
+        />
+      </div>
+      <div className="mb-6">
+        <textarea
+          rows="6"
+          placeholder="Entrer ton Message"
+          className="
                         w-full
                         rounded
                         py-3
@@ -95,12 +94,12 @@ export default function ContactForm() {
                         focus-visible:shadow-none
                         focus:border-white
                         "
-                        ></textarea>
-                  </div>
-                  <div>
-                     <button
-                        type="submit"
-                        className="
+        ></textarea>
+      </div>
+      <div>
+        <button
+          type="submit"
+          className="
                         w-full
                         text-neutral-800
                         bg-white
@@ -111,10 +110,10 @@ export default function ContactForm() {
                         hover:bg-opacity-90
                         font-bold
                         "
-                        >
-                     Envoyer le message
-                     </button>
-                  </div>
-               </form>
-  )
+        >
+          Envoyer le message
+        </button>
+      </div>
+    </form>
+  );
 }

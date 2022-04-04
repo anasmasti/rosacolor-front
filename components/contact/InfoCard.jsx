@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function InfoCard({ title, content }) {
   return (
@@ -10,11 +11,18 @@ export default function InfoCard({ title, content }) {
       <p className="text-neutral-500">
         {content.map((info) => (
           <React.Fragment key={info.id}>
-            { info.header != null && <span className="text-red-500"> {info.header} :</span> } {info.body}{" "}
-            <br />
+            {info.header != null && (
+              <span className="text-red-500"> {info.header} :</span>
+            )}{" "}
+            {info.body} <br />
           </React.Fragment>
         ))}
       </p>
     </div>
   );
 }
+
+InfoCard.propTypes = {
+  title: PropTypes.string,
+  content: PropTypes.array,
+};

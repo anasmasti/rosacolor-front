@@ -1,4 +1,5 @@
 import FooterSubLink from "./FooterSubLink";
+import PropTypes from "prop-types";
 
 export default function FooterLink({ title, links }) {
   return (
@@ -17,3 +18,8 @@ export default function FooterLink({ title, links }) {
     </div>
   );
 }
+
+FooterLink.propTypes = {
+  title: PropTypes.string,
+  links: PropTypes.array,
+};
