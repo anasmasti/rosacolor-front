@@ -2,8 +2,8 @@
 
     - components
         - full-menu
-          - section
-    				- NavItem
+          - Section
+    			- NavItem
         - layout
             - header
                 - Logo
