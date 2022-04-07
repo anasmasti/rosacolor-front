@@ -9,14 +9,14 @@ export default function RightSection() {
         <div
           className={"container relative left-0 w-full max-w-4xl lg:absolute xl:max-w-6xl lg:w-screen"}
         >
-          <Image
+          {/* <Image
             src={landingMainImage}
             height="1000"
             loading="eager"
             alt="Rosacolor landing image"
             id="landing-image"
             quality={50}
-          />
+          /> */}
         </div>
       </div>
   );

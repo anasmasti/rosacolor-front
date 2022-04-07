@@ -1,5 +1,6 @@
 import LeftSection from "./landing/LeftSection";
 import RightSection from "./landing/RightSection";
+import Cards from "./blogcards/BlogCards"
 
 export default function Home() {
   return (
@@ -8,6 +9,11 @@ export default function Home() {
         <LeftSection />
         <RightSection />
       </div>
+      <div>
+        <Cards/>
+      </div>
+      
     </div>
+    
   );
 }
