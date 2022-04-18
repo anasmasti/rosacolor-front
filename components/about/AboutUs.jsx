@@ -50,7 +50,7 @@ export default function AboutUs() {
   return (
     <div className="max-w-8xl mx-auto container bg-white pt-16">
       <AboutTitle header="A propos de nous" title="Qui sommes-nous ?" />
-      <div ref={refContainer} className={`${aboutStyle.aboutUsText} p-14`}>
+      <div ref={refContainer} className={`${aboutStyle.about_us_text} p-14`}>
         <AboutParagraph content={paragraphs} progress={progress} />
       </div>
     </div>

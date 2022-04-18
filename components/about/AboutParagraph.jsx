@@ -13,7 +13,7 @@ export default function AboutParagraph({ content, progress }) {
       {content.map((paragraph, index) => (
         <React.Fragment key={paragraph.id}>
           <p
-            className={`${aboutStyle.aboutUsText} text-3xl font-bold`}
+            className={`${aboutStyle.about_us_text} text-3xl font-bold`}
             style={{ opacity: blockOpacity(progress, index) }}
           >
             {paragraph.body}
