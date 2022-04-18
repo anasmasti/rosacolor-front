@@ -111,7 +111,7 @@ export default function FooterLinks() {
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2">
       {quickLinks.map((item) => (
-       <FooterLink key={item.id} title={item.title} links={item.links}/>
+        <FooterLink key={item.id} title={item.title} links={item.links} />
       ))}
     </div>
   );

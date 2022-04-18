@@ -2,6 +2,7 @@ import BlogCardItem from "./BlogCardItem";
 import { BiPaintRoll } from "react-icons/Bi";
 import { BsPaintBucket } from "react-icons/Bs";
 import { GoPaintcan } from "react-icons/Go";
+
 const BlogCardItems = () => {
   let blogCards = [
     {
@@ -12,7 +13,7 @@ const BlogCardItems = () => {
       href: "/blog1",
       icon: <BiPaintRoll className={`icon`} />,
       bgcolor: "bg-black",
-      color:"white",
+      color: "white",
     },
     {
       id: 2,
@@ -22,8 +23,7 @@ const BlogCardItems = () => {
       href: "/blog2",
       icon: <BsPaintBucket className={`icon`} />,
       bgcolor: "bg-neutral-200",
-      color:"black",
-
+      color: "black",
     },
     {
       id: 3,
@@ -33,8 +33,7 @@ const BlogCardItems = () => {
       href: "/blog3",
       icon: <GoPaintcan className={`icon`} />,
       bgcolor: "bg-red-600",
-      color:"white",
-
+      color: "white",
     },
   ];
 
@@ -43,10 +42,7 @@ const BlogCardItems = () => {
       className={`text-center h-72 m-0 p-0 items-center flex flex-col md:flex-row md:space-x-0 md:mt-0 md:text-l md:font-medium`}
     >
       {blogCards.map((item) => (
-        <BlogCardItem
-          key={item.id}
-          {...item}
-        />
+        <BlogCardItem key={item.id} {...item} />
       ))}
     </div>
   );

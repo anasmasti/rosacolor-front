@@ -26,6 +26,7 @@ export default function AboutUs() {
   let numberOfPages = 3;
   let progress = 0;
   let { current: containerElement } = refContainer;
+  
   if (containerElement) {
     let { clientHeight, offsetTop } = containerElement;
     let screenHeight = window.innerHeight;

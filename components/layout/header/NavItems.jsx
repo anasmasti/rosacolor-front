@@ -21,7 +21,7 @@ export default function NavItems() {
       id: 4,
       title: "Contact",
       href: "/contact",
-    }
+    },
   ];
 
   return (
