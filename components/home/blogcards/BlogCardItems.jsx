@@ -11,8 +11,9 @@ const BlogCardItems = () => {
         "1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati voluptatibus non tempora repudiandae.",
       href: "/blog1",
       icon: <BiPaintRoll className={`icon`} />,
-      bgcolor: "bg-black",
-      color:"white",
+      bgcolor: "bg-stone-900",
+      color: "white",
+      align: "right",
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ const BlogCardItems = () => {
       href: "/blog2",
       icon: <BsPaintBucket className={`icon`} />,
       bgcolor: "bg-neutral-200",
-      color:"black",
+      color: "black",
+      align: "center",
 
     },
     {
@@ -33,20 +35,18 @@ const BlogCardItems = () => {
       href: "/blog3",
       icon: <GoPaintcan className={`icon`} />,
       bgcolor: "bg-red-600",
-      color:"white",
+      color: "white",
+      align: "left",
 
     },
   ];
 
   return (
     <div
-      className={`text-center h-72 m-0 p-0 items-center flex flex-col md:flex-row md:space-x-0 md:mt-0 md:text-l md:font-medium`}
+      className={`m-0 p-0 flex flex-col md:flex-row md:space-x-0 md:mt-0 md:text-sm md:font-medium`}
     >
       {blogCards.map((item) => (
-        <BlogCardItem
-          key={item.id}
-          {...item}
-        />
+        <BlogCardItem key={item.id} {...item} />
       ))}
     </div>
   );

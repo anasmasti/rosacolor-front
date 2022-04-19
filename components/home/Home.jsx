@@ -1,6 +1,8 @@
 import LeftSection from "./landing/LeftSection";
 import RightSection from "./landing/RightSection";
-import Cards from "./blogcards/BlogCards"
+import BlogCards from "./blogcards/BlogCards";
+import MainCarousel from "./maincarousel/MainCarousel";
+import Title from "./interiorexterior/Title";
 
 export default function Home() {
   return (
@@ -10,10 +12,14 @@ export default function Home() {
         <RightSection />
       </div>
       <div>
-        <Cards/>
+        <MainCarousel/>
       </div>
-      
+      <div>
+        <BlogCards />
+      </div>
+      <div>
+        <Title/>
+      </div>
     </div>
-    
   );
 }

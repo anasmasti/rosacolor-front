@@ -1,14 +1,13 @@
+const BlogCardItem = ({ title, description, href, icon, color, bgcolor,align }) => {
+  return (
+    <div className={`flex-container p-12 ${bgcolor}`}>
+      <a href={href}>
+        <div className={`icon text-${color} text-${align}`}>{icon}</div>
+        <div className={`title text-${color} text-${align}`}>{title}</div>
+        <div className={`descrip text-${color} text-${align}`}>{description}</div>
+      </a>
+    </div>
+  );
+};
 
-const BlogCardItem = ({ title, description, href, icon, color, bgcolor }) => {
-    return ( 
-        <div className={`flex-container p-12 ${bgcolor}`}>
-            <a href={href}>
-                <div className={`icon text-${color}`}>{icon}</div>
-                <div className={`title text-${color}`}>{title}</div>
-                <div className={`descrip text-${color}`}>{description}</div>
-            </a>
-        </div> 
-     );
-}
- 
 export default BlogCardItem;

@@ -3,10 +3,9 @@ import CardItems from "./BlogCardItems";
 const BlogCards = () => {
   return (
     <>
-      <div className=" card-container">
+      <div className="card-container">
         <CardItems />
       </div>
-      
     </>
   );
 };

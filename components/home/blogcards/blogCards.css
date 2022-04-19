@@ -1,15 +1,12 @@
- .icon{
-    height: 8vmin;
-    width: 8vmin;
-    position: relative;
-    left: 11vmin;
+.icon {
+  height: 8vmin;
+  width: 8vmin;
+
 }
-.title{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:25px;
-    font-weight:bold;
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
-.descrip{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:15px;
+.descrip {
+  font-family: Arial, Helvetica, sans-serif;
 }
