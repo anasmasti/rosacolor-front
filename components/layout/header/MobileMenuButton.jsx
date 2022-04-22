@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import {
   hideMobileMenu,
-  openMobileMenu
+  openMobileMenu,
 } from "../../../services/mobile-menu/mobileMenuActions";
 
 export default function MobileMenuButton() {

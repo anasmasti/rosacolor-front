@@ -2,6 +2,7 @@ import BlogCardItem from "./BlogCardItem";
 import { BiPaintRoll } from "react-icons/Bi";
 import { BsPaintBucket } from "react-icons/Bs";
 import { GoPaintcan } from "react-icons/Go";
+
 const BlogCardItems = () => {
   let blogCards = [
     {

@@ -1,8 +1,8 @@
 import LeftSection from "./landing/LeftSection";
 import RightSection from "./landing/RightSection";
 import BlogCards from "./blogcards/BlogCards";
-import MainCarousel from "./maincarousel/MainCarousel";
 import Title from "./interiorexterior/Title";
+import Slider from "./mainslider/Slider";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <RightSection />
       </div>
       <div>
-        <MainCarousel/>
+        <Slider/>
       </div>
       <div>
         <BlogCards />

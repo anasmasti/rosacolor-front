@@ -1,14 +1,26 @@
 import React from "react";
+import aboutStyle from "../../styles/about.module.scss";
 
-export default function AboutParagraph({ content }) {
+const blockOpacity = (sectionProgress, blockNo) => {
+  let progress = sectionProgress - blockNo;
+  if (progress >= 0 && progress < 1) return 1;
+  return 0.2;
+};
+
+export default function AboutParagraph({ content, progress }) {
   return (
-    <p className="text-xl text-neutral-500 px-10 sm:px-5 mt-6 mb-8">
-      {content.map((paragraph) => (
+    <>
+      {content.map((paragraph, index) => (
         <React.Fragment key={paragraph.id}>
-          {paragraph.body}
-          <br /> <br />
+          <p
+            className={`${aboutStyle.about_us_text} text-3xl font-bold`}
+            style={{ opacity: blockOpacity(progress, index) }}
+          >
+            {paragraph.body}
+            <br /> <br />
+          </p>
         </React.Fragment>
       ))}
-    </p>
+    </>
   );
 }
