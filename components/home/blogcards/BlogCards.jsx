@@ -1,10 +1,10 @@
-import CardItems from "./BlogCardItems";
+import BlogCardItems from "./BlogCardItems";
 
 const BlogCards = () => {
   return (
     <>
       <div className="card-container">
-        <CardItems />
+        <BlogCardItems />
       </div>
     </>
   );

@@ -1,8 +1,10 @@
 import LeftSection from "./landing/LeftSection";
 import RightSection from "./landing/RightSection";
 import BlogCards from "./blogcards/BlogCards";
-import Title from "./interiorexterior/Title";
+import Title from "./categorycards/Title";
 import Slider from "./mainslider/Slider";
+import CategoryCards from "./categorycards/CategoryCards";
+
 
 export default function Home() {
   return (
@@ -17,8 +19,9 @@ export default function Home() {
       <div>
         <BlogCards />
       </div>
-      <div>
+      <div className="bg-white m-20 shadow-lg">
         <Title/>
+        <CategoryCards/>
       </div>
     </div>
   );
