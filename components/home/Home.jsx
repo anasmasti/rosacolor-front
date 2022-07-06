@@ -5,7 +5,6 @@ import Title from "./categorycards/Title";
 import Slider from "./mainslider/Slider";
 import CategoryCards from "./categorycards/CategoryCards";
 
-
 export default function Home() {
   return (
     <div className="relative items-center justify-center w-full overflow-x-hidden lg:pt-40 lg:pb-40 xl:pt-40 xl:pb-64">
