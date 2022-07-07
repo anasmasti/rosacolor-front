@@ -17,8 +17,10 @@ export default function ProductDetails() {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid mollitia quis inventore, voluptates error enim veniam odio sed sit fugiat vel consequatur voluptatem, nesciunt nobis obcaecati iusto quasi similique aliquam eius nostrum porro recusandae! Vitae, nemo similique voluptas nihil unde labore error sed, odio dicta debitis ipsam quasi libero deleniti, molestias incidunt suscipit et dolorum expedita commodi saepe dolor ullam doloribus harum? Hic nobis excepturi alias ipsa.
               <br/>
             </p>
-            <p className="text-red-500 border border-black-200 rounded-lg mb-5 p-2"> Saepe omnis modi corporis aliquid quis ipsum harum molestiae reprehenderit amet maiores sequi, quia odio! Non perspiciatis maiores repudiandae omnis perferendis itaque esse, praesentium veniam a at necessitatibus aliquid molestias, illum natus voluptatem.</p>
-            <p className="text-gray-600 text-xs mb-2">13/02/2022</p>
+            <p className="text-red-500 border border-black-200 rounded-lg mb-5 p-2"> 
+              Saepe omnis modi corporis aliquid quis ipsum harum molestiae reprehenderit amet maiores sequi, quia odio! Non perspiciatis maiores repudiandae omnis perferendis itaque esse, praesentium veniam a at necessitatibus aliquid molestias, illum natus voluptatem.
+            </p>
+            <p className="text-gray-600 text-xs mb-2">07/07/2022</p>
             <button className="relative
                   self-start 
                   inline-block
