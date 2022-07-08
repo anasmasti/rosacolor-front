@@ -1,10 +1,10 @@
 import React from 'react'
+import Products from "../../components/products/Products";
 
-export default function Products() {
+export default function products() {
   return (
-    <div>
-       <h1>Products</h1>
-       <a href=""></a>
+    <div className="mb-5">   
+      <Products />
     </div>
   )
 }

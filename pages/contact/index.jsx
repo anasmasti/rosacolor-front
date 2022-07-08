@@ -1,8 +1,5 @@
 import RightSecion from "../../components/contact/RightSecion";
 import LeftSection from "../../components/contact/LeftSection";
-import ProductCategoryCards from "../../components/contact/products/ProductCategory/ProductCategoryCards";
-import ProductList from "../../components/contact/products/ProductList/ProductList";
-import ProductDetails from "../../components/contact/products/ProductDetails/ProductDetails";
 
 export default function contact() {
   return (
@@ -15,11 +12,7 @@ export default function contact() {
           </div>
         </div>
       </section>
-      <div className="mb-5">        
-        <ProductCategoryCards/>
-        <ProductList/>
-        <ProductDetails/>
-      </div>
+
     </div>
   );
 }
