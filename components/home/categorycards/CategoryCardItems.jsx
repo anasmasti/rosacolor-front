@@ -1,4 +1,5 @@
 import CategoryCardItem from "./CategoryCardItem";
+import CategoryTitles from "./categorytitles/CategoryTitles";
 const CategoryCardItems = () => {
   let categorycard = [
     {
@@ -14,11 +15,19 @@ const CategoryCardItems = () => {
   ];
 
   return (
-    <div className={`p-5 pb-32 static flex flex-col justify-center gap-10 justify-items-center md:flex-row md:space-x-0 md:mt-0`}>
+    <div className={`px-5 relative
+                    flex flex-col 
+                    justify-center 
+                    gap-10 
+                    justify-items-center 
+                    md:flex-row 
+                    md:space-x-0 
+                    md:mt-0`}>
       {categorycard.map((item)=>(
         <CategoryCardItem key={item.id} {...item}/>
       ))}
     </div>
+    
   );
 };
 

@@ -4,6 +4,7 @@ import BlogCards from "./blogcards/BlogCards";
 import Title from "./categorycards/Title";
 import Slider from "./mainslider/Slider";
 import CategoryCards from "./categorycards/CategoryCards";
+import CategoryTitles from "./categorycards/categorytitles/CategoryTitles";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <div>
         <BlogCards />
       </div>
-      <div className="bg-white m-20 shadow-lg">
+      <div className="bg-white flex flex-col m-20 shadow-lg">
         <Title/>
         <CategoryCards/>
       </div>

@@ -1,10 +1,15 @@
 import React from "react";
-import ProductDetailsItems from "./ProductDetailsItems";
+import Link from "next/link";
+import ProductList from "../productlist/ProductList";
+import PropTypes from "prop-types";
+import data from '../././../data/data.json'
 
 export default function ProductDetails() {
+  
   return (
-    <div className="ml-12">
-      <span className='text-dark
+    <div className="mt-12">
+      <span className='m-12
+                      text-dark
                       mb-6
                       uppercase
                       font-bold
@@ -23,34 +28,40 @@ export default function ProductDetails() {
             src="/images/productlist/5.jpg"
             alt=""
           />
+          
           <div className="p-6 flex flex-col justify-start">
-            <h5 className="text-gray-900 text-xl font-medium mb-2">Product Name</h5>
+            <h5 className="text-gray-900 text-xl font-medium mb-2">Product Title</h5>
             <p className="text-gray-700 text-base mb-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid mollitia quis inventore, voluptates error enim veniam odio sed sit fugiat vel consequatur voluptatem, nesciunt nobis obcaecati iusto quasi similique aliquam eius nostrum porro recusandae! Vitae, nemo similique voluptas nihil unde labore error sed, odio dicta debitis ipsam quasi libero deleniti, molestias incidunt suscipit et dolorum expedita commodi saepe dolor ullam doloribus harum? Hic nobis excepturi alias ipsa.
-              <br/>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint nihil, quos vero incidunt, aut numquam distinctio odit harum consequuntur illum voluptatibus culpa recusandae labore earum rem eius magnam sunt provident. Commodi natus praesentium odio a necessitatibus, cupiditate minus aperiam amet magni quia minima reiciendis molestias eum, recusandae quos facilis. Voluptate eum architecto ea totam suscipit explicabo ab delectus? Veniam veritatis hic commodi alias, natus fugiat vitae explicabo voluptatum similique aliquid aspernatur quasi ipsam expedita, cumque facere minima. Nihil, vitae quidem!              <br/>
             </p>
-            <p className="text-red-500 border border-black-200 rounded-lg mb-5 p-2"> 
-              Saepe omnis modi corporis aliquid quis ipsum harum molestiae reprehenderit amet maiores sequi, quia odio! Non perspiciatis maiores repudiandae omnis perferendis itaque esse, praesentium veniam a at necessitatibus aliquid molestias, illum natus voluptatem.
-            </p>
-            <p className="text-gray-600 text-xs">07/07/2022</p>
-
+            <hr />
+            <p className="text-gray-600 text-xs text-right font-thin mt-5">07/07/2022</p>
           </div>
         </div>
-        
       </div>
-      <button className="
-                  mx-5
-                  inline-block
-                  w-auto px-8
-                  py-3 mx-auto
-                  mt-0 text-base 
-                  font-bold text-white
-                  bg-red-500 
-                  border-t
-                  border-gray-200
-                  rounded-md 
-                  fold-bold 
-                  lg:mx-0">Back</button>
+        <Link href="/products/productlist">
+          <div className="
+                      cursor-pointer
+                      mx-16
+                      mb-5
+                      inline-block
+                      w-auto px-8
+                      py-3
+                      mt-0 text-base 
+                      font-bold text-white
+                      bg-red-500 
+                      border-t
+                      border-gray-200
+                      rounded-md 
+                      fold-bold
+                      lg:mx-0">
+                Back
+          </div>
+        </Link>
     </div>
   );
 }
+
+ProductDetails.propTypes = {
+  href: PropTypes.string,
+};

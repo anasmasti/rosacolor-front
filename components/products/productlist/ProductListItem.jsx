@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from "next/link";
 import PropTypes from "prop-types";
 
-export default function ProductListItem({title, description, src, href}) {
+export default function ProductListItem({title, description, src}) {
+  
   return (
 <div className="flex justify-center">
   <div className="block p-6 rounded-lg shadow-lg bg-white max-w-xs">
@@ -25,8 +25,7 @@ export default function ProductListItem({title, description, src, href}) {
               mb-4">
       {description}
     </p>
-  <Link href={href}>
-    <a href="#" className="relative 
+    <a className="relative 
                       self-start 
                       inline-block
                       w-auto px-8
@@ -42,7 +41,6 @@ export default function ProductListItem({title, description, src, href}) {
                       lg:mx-0">
       See More
     </a>
-  </Link>
   </div>
 </div>
   )
