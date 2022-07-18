@@ -42,7 +42,6 @@ export default function ProductDetails() {
         <Link href="/products/productlist">
           <div className="
                       cursor-pointer
-                      mx-16
                       mb-5
                       inline-block
                       w-auto px-8
