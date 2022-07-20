@@ -6,18 +6,24 @@ export default function Input() {
     {
       id: 1,
       placeholder: "First Name",
+      type:"text"
     },
     {
       id: 2,
       placeholder: "Last Name",
+      type:"text"
     },
     {
       id: 3,
       placeholder: "Email",
+      type:"email"
+
     },
     {
       id: 4,
       placeholder: "Phone Number",
+      type:"text"
+
     },
   ];
 

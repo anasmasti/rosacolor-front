@@ -4,7 +4,8 @@ const CategoryCards = () => {
     return ( 
         <div className="grid grid-rows-1 gap-0">
             
-            <CategoryCardItems/><CategoryTitles/>
+            <CategoryCardItems/>
+            <CategoryTitles/>
         </div>
      );
 }

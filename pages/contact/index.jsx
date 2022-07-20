@@ -1,6 +1,5 @@
 import RightSecion from "../../components/contact/RightSecion";
 import LeftSection from "../../components/contact/LeftSection";
-
 export default function contact() {
   return (
     <div>

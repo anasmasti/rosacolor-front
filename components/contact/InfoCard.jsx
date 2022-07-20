@@ -1,24 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function InfoCard({ title, content }) {
+export default function InfoCard({ title, src, content}) {
   return (
-    <div className="p-5 space-y-1 border-2 border-red-400 rounded-md">
-      <h3 className="text-xl font-semibold text-neutral-700 capitalize ">
-        {title}
-      </h3>
-
-      <p className="text-neutral-500">
-        {content.map((info) => (
-          <React.Fragment key={info.id}>
+    <div className="container flex border shadow-md">
+    <div className="card bg-red-500 text-white">
+      
+      <div className="content">
+        <div className="imgbox grayscale hover:grayscale-0">
+          <img src={src} className="md:"/>
+        </div>
+        <h2>{title}</h2>
+        <p className="p-2">
+          {content.map((info) => (
+            <React.Fragment key={info.id}>
             {info.header != null && (
-              <span className="text-red-500"> {info.header} :</span>
-            )}{" "}
+              <span> {info.header} :</span>
+              )}{" "}
             {info.body} <br />
           </React.Fragment>
-        ))}
-      </p>
+            ))}
+        </p>
+      </div>
     </div>
+  </div>
   );
 }
 

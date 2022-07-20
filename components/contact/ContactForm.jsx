@@ -1,8 +1,11 @@
+import MainButton from "../shared/MainButton";
 import Input from "./Input";
-import SendMessageBtn from "./SendMessageBtn";
 import Textarea from "./Textarea";
 
 export default function ContactForm() {
+  function sendMessage() {
+    console.log('Done');
+  }
   return (
     <form>
       <div>
@@ -11,12 +14,12 @@ export default function ContactForm() {
     
       <div className="mb-6">
         <Textarea />
-       
       </div>
+
       <div>
-        <SendMessageBtn />
-       
+        <MainButton value="Envoyer" styleClass={"w-full"} onClick={() => sendMessage()}/>
       </div>
+
     </form>
   );
 }

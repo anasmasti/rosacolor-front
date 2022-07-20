@@ -1,4 +1,5 @@
 import React from 'react'
+import MainTitle from '../../shared/MainTitle'
 import ProductCategory from './ProductCategory'
 
 export default function ProductCategoryCards() {
@@ -7,19 +8,7 @@ export default function ProductCategoryCards() {
       <span className="block mb-4 text-base text-primary font-semibold">
         Our Products
       </span>
-      <span className='text-dark
-                      mb-6
-                      uppercase
-                      font-bold
-                      text-[32px]
-                      sm:text-[40px]
-                      lg:text-[36px]
-                      xl:text-4xl
-                      underline decoration-red-500'
-      >
-        Choose A Category
-      </span>
-      
+      <MainTitle value='Choose A Category' styleClass={'mx-0'}/>
       <div>
       <ProductCategory/>
       </div>

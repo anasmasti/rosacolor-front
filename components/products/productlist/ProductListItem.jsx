@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from "prop-types";
+import MainButton from '../../shared/MainButton';
 
-export default function ProductListItem({title, description, src}) {
+export default function ProductListItem({title, description, src,btn}) {
   
   return (
 <div className="flex justify-center">
@@ -25,22 +26,9 @@ export default function ProductListItem({title, description, src}) {
               mb-4">
       {description}
     </p>
-    <a className="relative 
-                      self-start 
-                      inline-block
-                      w-auto px-8
-                      py-2 mx-auto
-                      mt-0 text-base 
-                      font-bold text-white
-                      bg-red-500 
-                      border-t 
-                      border-gray-200
-                      rounded-md 
-                      sm:mt-1 
-                      fold-bold 
-                      lg:mx-0">
-      See More
-    </a>
+    <div>
+      <MainButton value='See more' styleClass={"w-auto"}/> 
+    </div>
   </div>
 </div>
   )

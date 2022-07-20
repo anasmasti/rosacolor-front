@@ -5,6 +5,7 @@ export default function Info() {
     {
       id: 1,
       title: "Adresse",
+      src: "/images/contact/adresse.jpg",
       content: `N°39, Rue Al Fourat, 1er Etage, Mâarif 20100 Casablanca - Maroc.`,
       content: [
         {
@@ -17,6 +18,7 @@ export default function Info() {
     {
       id: 2,
       title: "Horaires",
+      src: "/images/contact/heure.jpg",
       content: [
         {
           id: 1,
@@ -33,6 +35,7 @@ export default function Info() {
     {
       id: 3,
       title: "Contactez-nous",
+      src: "/images/contact/contact.jpg",
       content: [
         {
           id: 1,
@@ -56,9 +59,9 @@ export default function Info() {
           <span className="underline decoration-red-500">nous</span>
         </h1>
 
-        <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-2">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2">
           {infoList.map((info) => (
-            <InfoCard key={info.id} title={info.title} content={info.content} />
+            <InfoCard key={info.id} title={info.title} content={info.content} src={info.src} />
           ))}
         </div>
       </div>
