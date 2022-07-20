@@ -54,7 +54,7 @@ export default function Info() {
   return (
     <div className="bg-white">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl ">
+        <h1 className="text-3xl font-semibold text-gray-800  lg:text-4xl ">
           Quelques informations <br /> sur{" "}
           <span className="underline decoration-red-500">nous</span>
         </h1>

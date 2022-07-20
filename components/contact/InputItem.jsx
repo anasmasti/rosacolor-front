@@ -8,13 +8,11 @@ const InputItem = ({ placeholder,type }) => {
         required
         type={type}
         placeholder={placeholder}
-        className="mb-6
+        className="mb-4
                 w-full
                 py-3
-                px-[14px]
-                text-body-color
-                text-base
                 outline-none
+                focus:border-red-500
                 "
       />
     </>
