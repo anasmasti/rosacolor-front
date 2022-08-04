@@ -4,12 +4,8 @@ import ProductListItems from './ProductListItems'
 
 export default function ProductList() {
   return (
-    <div className=''>
-      
-      <MainTitle value='Products List'/>
-
-      
+    <div className=''>   
       <ProductListItems/>
-    </div>
+      </div>
   )
 }

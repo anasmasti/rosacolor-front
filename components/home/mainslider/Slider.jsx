@@ -44,7 +44,7 @@ const Slider = () => {
             key={obj.id}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-            <img src={`/images/slider/Slider${index + 1}.jpg`} />
+            <img src={`/images/slider/Slider${index + 1}.jpg`}/>
           </div>
         );
       })}

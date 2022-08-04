@@ -34,14 +34,14 @@ export default function ProductCategory() {
         {
             id:5,
             title:"Category5",
-            src:"/images/productcategory/2category.jpg",
+            src:"/images/productcategory/5category.jpg",
             href:"/products/productlist",
 
         },
         {
             id:6,
             title:"Category6",
-            src:"/images/productcategory/1category.jpg",
+            src:"/images/productcategory/6category.jpg",
             href:"/products/productlist",
 
         }

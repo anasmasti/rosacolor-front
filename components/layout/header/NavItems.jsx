@@ -26,8 +26,14 @@ export default function NavItems() {
 
   return (
     <ul
-      className={`flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-meduim text-4xl font-bold`}
-    >
+      className={`flex flex-col 
+                  mt-4 md:flex-row 
+                  md:space-x-8 md:mt-0 md:text-sm md:font-meduim 
+                  text-4xl 
+                  font-bold
+                  
+                  `}
+    >           
       {menuItems.map((item) => (
         <NavItem key={item.id} title={item.title} href={item.href} />
       ))}

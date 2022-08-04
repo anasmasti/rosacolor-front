@@ -6,6 +6,9 @@ input::placeholder, textarea::placeholder{
     color:rgb(54, 54, 54);
     font-size:14px;
 }
+input:hover, textarea:hover{
+    color:red
+}
 .card{
     width: 300px;
     height: 300px;

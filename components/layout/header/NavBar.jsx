@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <>
       <MobileMenu />
-      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+      <nav className="navbar bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Logo />
           <div className="flex md:order-2">

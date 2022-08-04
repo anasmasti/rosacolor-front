@@ -3,7 +3,7 @@ import Products from "../../components/products/Products";
 
 export default function products() {
   return (
-    <div className="mb-5">   
+    <div className="">   
       <Products />
     </div>
   )

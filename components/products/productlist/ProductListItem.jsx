@@ -5,29 +5,37 @@ import MainButton from '../../shared/MainButton';
 export default function ProductListItem({title, description, src,btn}) {
   
   return (
-<div className="flex justify-center">
-  <div className="block p-6 rounded-lg shadow-lg bg-white max-w-xs">
-  <img className="rounded-t-lg
-              h-56
-              w-52
-              mb-4
+<div className="flex">
+  <div className="block rounded-lg shadow-lg bg-white max-w-xs text-center">
+  <img className="
+              relative
+              left-16
+              p-6 
+              hover:scale-110
+              duration-300
+              h-52
+              w-44
               " 
       src= {src} />
-    <h5 className="text-gray-900 
-                text-xl 
+      
+    <h5 className="text-white
+    p-2 w-full
+                text-lg
                 leading-tight 
                 font-medium 
-                mb-2">
+                mb-2
+                bg-red-500">
         {title}
     </h5>
-
-    <p className="text-gray-700 
-              text-base 
+<div className="p-6">
+    <p className="text-gray-700
+              text-sm
               mb-4">
       {description}
     </p>
     <div>
-      <MainButton value='See more' styleClass={"w-auto"}/> 
+      <MainButton value='See more' styleClass={"w-auto"} /> 
+    </div>
     </div>
   </div>
 </div>

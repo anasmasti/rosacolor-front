@@ -9,7 +9,7 @@ export default function SearchBar() {
       <input
         type="text"
         id="email-adress-icon"
-        className="block p-2 pl-10 w-full text-ne bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500"
+        className="block p-2 pl-10 w-full sm:text-sm"
         placeholder="Search..."
       />
     </div>

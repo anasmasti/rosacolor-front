@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function ProductListItems() {
 
   return (
-    <div className={`p-5 pb-32 static flex flex-col justify-center gap-10 justify-items-center md:flex-row md:space-x-0 md:mt-0 flex-wrap`}>
+    <div className={`p-5 pb-32 static flex flex-col justify-center gap-10 md:flex-row md:space-x-0 md:mt-0 flex-wrap`}>
         {data.map((items) =>
         <Link href={'/products/product' + items.id}>
           <div className="cursor-pointer">

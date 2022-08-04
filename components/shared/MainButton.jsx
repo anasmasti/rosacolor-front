@@ -1,6 +1,9 @@
 import React from 'react';
 
-const MainButton = ({value,styleClass,onClick}) => {
+const MainButton = ({value,styleClass}) => {
+    const onClick=()=>{
+        console.log('Done');
+    }
     return (
         <button className={`
                     ${styleClass}

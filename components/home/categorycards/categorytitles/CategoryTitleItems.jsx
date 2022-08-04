@@ -14,8 +14,9 @@ const CategoryTitleItems = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-24 m-auto  mb-5 left-0 right-0 text-center "
+    <div className="relative flex flex-col justify-center md:flex-row max-w-min m-auto mb-5 left-0 right-0 text-center "
         //className={`p-10 pt-0 flex flex-col md:flex-row md:space-x-0 md:mt-0`}
+          style={{top:"-50%",gap:"75%"}}
     >
         {titleitems.map((item)=>(
             <CategoryTitleItem key={item.id} {...item}/>

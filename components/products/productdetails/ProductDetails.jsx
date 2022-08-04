@@ -15,8 +15,8 @@ export default function ProductDetails() {
       <div className="flex justify-center my-12">
         <div className="flex flex-col md:flex-row md:max-w-3xl rounded-lg bg-white shadow-lg">
           <img
-            className=" w-full object-cover sm:h-auto md:w-36 rounded-t-lg md:rounded-none md:rounded-l-lg"
-            src="/images/productlist/5.jpg"
+            className="p-5 w-full object-cover sm:h-auto md:w-36 rounded-t-lg md:rounded-none md:rounded-l-lg"
+            src="/images/productlist/5.png"
           />
           
           <div className="p-6 flex flex-col justify-start">
