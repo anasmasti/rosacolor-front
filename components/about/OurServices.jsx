@@ -39,7 +39,6 @@ export default function OurServices() {
       <AboutTitle
         header="Nos services"
         title="Lorem ipsum is placeholder text commonly"
-        className="underline-offset-2 underline underline-red-500"
       />
 
       <div className="focus:outline-none mt-20 flex justify-center gap-10 px-4">

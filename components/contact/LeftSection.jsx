@@ -4,7 +4,7 @@ export default function LeftSection() {
   return (
     <div>
 
-      <div className="w-full lg:w-2/3 xl:w-2/3 ">
+      <div className="w-full pr-44 ">
         <InfoSection />
       </div>
     </div>

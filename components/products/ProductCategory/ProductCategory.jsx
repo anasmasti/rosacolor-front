@@ -44,6 +44,20 @@ export default function ProductCategory() {
             src:"/images/productcategory/6category.jpg",
             href:"/products/productlist",
 
+        },
+        {
+            id:7,
+            title:"Category7",
+            src:"/images/productcategory/5category.jpg",
+            href:"/products/productlist",
+
+        },
+        {
+            id:8,
+            title:"Category8",
+            src:"/images/productcategory/2category.jpg",
+            href:"/products/productlist",
+
         }
     ]
   return (

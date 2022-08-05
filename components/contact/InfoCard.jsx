@@ -8,7 +8,7 @@ export default function InfoCard({ title, src, content}) {
       
       <div className="content">
         <div className="imgbox grayscale hover:grayscale-0">
-          <img src={src} className="md:"/>
+          <img src={src} className=""/>
         </div>
         <h2>{title}</h2>
         <p className="p-2">
