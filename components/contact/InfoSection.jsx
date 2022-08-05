@@ -4,10 +4,7 @@ import MainTitle from "../shared/MainTitle";
 
 export default function InfoSection() {
   return (
-    <div className="mt-14">
-      <span className="block text-base text-primary font-semibold ">
-        Contactez-nous
-      </span>
+    <div className="mt-5">
       <MainTitle value="Prenez contact avec nous" 
                  styleClass={`mb-5 mt-5
                               no-underline

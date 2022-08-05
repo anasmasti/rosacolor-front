@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import AboutParagraph from "./AboutParagraph";
-import AboutTitle from "./AboutTitle";
 import aboutStyle from "../../styles/about.module.scss";
+import MainTitle from "../shared/MainTitle";
 
 export default function AboutUs() {
   const [scrollY, setScrollY] = useState(0);
@@ -48,9 +48,9 @@ export default function AboutUs() {
   }, [handelScroll]);
 
   return (
-    <div className="max-w-8xl mx-auto container bg-white pt-16">
-      <AboutTitle header="A propos de nous" title="Qui sommes-nous ?" />
-      <div ref={refContainer} className={`${aboutStyle.about_us_text} p-14`}>
+    <div className="max-w-8xl mx-auto container bg-white ">
+      
+      <div ref={refContainer} className={`${aboutStyle.about_us_text} p-14 `}>
         <AboutParagraph content={paragraphs} progress={progress} />
       </div>
     </div>
