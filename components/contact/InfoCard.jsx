@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 
 export default function InfoCard({ title, src, content}) {
   return (
-    <div className="container flex border shadow-md">
-    <div className="card bg-red-500 text-white">
-      
+    <div className="container flex ">
+    <div className="card bg-red-500 border shadow-md text-white">
       <div className="content">
         <div className="imgbox grayscale hover:grayscale-0">
           <img src={src} className=""/>
