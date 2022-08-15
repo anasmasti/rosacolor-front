@@ -1,21 +1,13 @@
-import data from '../././../data/data.json'
-import React from 'react'
-import ProductListItem from './ProductListItem'
-import Link from 'next/link'
-
+import data from "../././../data/data.json";
+import React from "react";
+import ProductListItem from "./ProductListItem";
 
 export default function ProductListItems() {
-
   return (
-    <div className={`p-5 pb-32 static flex flex-col justify-center gap-10 md:flex-row md:space-x-0 md:mt-0 flex-wrap`}>
-        {data.map((items) =>
-        <Link href={'/products/product' + items.id}>
-          <div className="cursor-pointer">
-          <ProductListItem key={items.id} {...items} />
-          </div>
-        </Link>
-        )}
-
+    <div className={`w-full grid grid-cols-1 gap-2 gap-y-6 md:grid-cols-2 lg:grid-cols-4 mb-5`}>
+      {data.map((items) => (
+        <ProductListItem key={items.id} {...items} />
+      ))}
     </div>
-  )
+  );
 }

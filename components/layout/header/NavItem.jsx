@@ -1,16 +1,16 @@
 import Link from "next/link";
 import PropTypes from "prop-types";
+import { useRouter } from 'next/router'
 
-export default function NavItem({ title, href }) {
+export default function NavItem({id, title, href }) {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   return (
     <li>
-      <Link href={href}>
+      <Link key={id} href={href}>
         <a
-          className=" block py-2 pr-4 pl-3 
-                    text-white 
-                    rounded 
-                    md:bg-transparent md:text-neutral-500 md:p-0 
-                    hover:text-red-400"
+          className={currentRoute === {href} ? 'text-red-500' : "text-black hover:text-red-400"}
           data-testid={href}
         >
           {title}

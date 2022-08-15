@@ -1,21 +1,22 @@
 import React from "react";
 
-const Title = ({src, value1,value2}) => {
+const Title = ({src, value1,value2,alt}) => {
   return (
-    <div>
+   
       <div className="relative text-center text-white">
         <img
           src={src}
-          style={{ width: "100%" }}
+          alt={alt}
+          className='h-[350px] object-cover w-full'
         />
-        <h1 className="md:text-lg sm:text-lg absolute top-1/2 text-center w-full uppercase lg:text-3xl font-light tracking-widest underline underline-offset-8 decoration-red-500">
+        <h1 className="text-3xl absolute text-center top-1/2 w-full uppercase font-light tracking-widest underline underline-offset-8 decoration-red-500">
           {value1}
         </h1>
-        <span className="md:max-h-12 whitespace-nowrap md:text-ellipsis sm:text-ellipsis overflow-hidden lg:text-md absolute top-3/4 inset-x-2 text-center w-full">
+        <span className="md:max-h-12 overflow-hidden text-sm absolute top-2/3 inset-x-2 text-center w-full">
          {value2}
         </span>
       </div>
-    </div>
+   
   );
 };
 

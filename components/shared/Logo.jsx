@@ -7,7 +7,7 @@ export default function Logo() {
         {/*<span className="self-center text-xl font-bold whitespace-nowrap">
           Rosacolor
         </span>*/}
-        <img src="images/logo/logo.png" width="200" />
+        <img src="/images/logo/logo.png" width="200" />
       </a>
     </Link>
   );

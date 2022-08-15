@@ -17,7 +17,6 @@ const MainButton = ({value,styleClass}) => {
                       border-gray-200
                       rounded-md 
                       sm:mt-1 
-                      fold-bold 
                       lg:mx-0`}
                 onClick={()=>onClick()}
             >

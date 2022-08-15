@@ -7,7 +7,7 @@ const BlogCardItems = () => {
   let blogCards = [
     {
       id: 1,
-      title: "Lorem ipsum1",
+      title: "Lorem ipsum 1",
       description:
         "1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati voluptatibus non tempora repudiandae.",
       href: "/blog1",
@@ -22,7 +22,7 @@ const BlogCardItems = () => {
       description:
         "2Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo obcaecati voluptatibus non tempora repudiandae.",
       href: "/blog2",
-      icon: <BsPaintBucket className={`icon`} />,
+      icon: <BsPaintBucket className={`icon text-center`} />,
       bgcolor: "bg-neutral-200",
       color: "black",
       align: "center",

@@ -41,7 +41,7 @@ export default function OurServices() {
         title="Lorem ipsum is placeholder text commonly"
       />
 
-      <div className="focus:outline-none mt-20 flex justify-center gap-10 px-4">
+      <div className="focus:outline-none mt-20 flex justify-center gap-10 px-4 flex-col lg:flex-row">
         {ourServices.map((service) => (
           <AboutServiceCard
             key={service.id}

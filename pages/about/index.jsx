@@ -22,7 +22,7 @@ export default function About() {
             <AboutUs />
           </div>
           <img src="images/about/atelier.jpg"
-            className="my-20 h-3/4 w-full mr-20 grayscale duration-300 hover:grayscale-0 object-cover"/>
+            className="my-20 h-fit lg:h-5/6 md:h-5/6 w-full mr-20 grayscale duration-300 hover:grayscale-0 object-cover"/>
         </div>
 
           <OurServices />

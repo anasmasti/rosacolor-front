@@ -15,7 +15,7 @@ export default function NavItems() {
     {
       id: 3,
       title: "Produits",
-      href: "/products",
+      href: "/#cat",
     },
     {
       id: 4,
@@ -31,7 +31,6 @@ export default function NavItems() {
                   md:space-x-8 md:mt-0 md:text-sm md:font-meduim 
                   text-4xl 
                   font-bold
-                  
                   `}
     >           
       {menuItems.map((item) => (

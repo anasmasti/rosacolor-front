@@ -6,7 +6,7 @@ import Title from '../../components/shared/Title'
 
 export default function productslist() {
   return (
-    <div> {/**className="py-20 px-6 m-12"*/}
+    <div className='bg-gray-50'>
 
       <Title src='../../../images/productcategory/bg.png' value1='peinture décorative' value2='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil commodi corporis tempore nesciunt iste ad hic cupiditate exercitationem incidunt molestiae illum cumque fuga harum, eveniet quasi, dolore alias ipsa vero.'/>
       <MainTitle value="step 2: choose a product" 

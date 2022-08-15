@@ -1,45 +1,34 @@
-import React from 'react'
+import React from "react";
 import PropTypes from "prop-types";
-import MainButton from '../../shared/MainButton';
+import MainButton from "../../shared/MainButton";
+import Link from "next/link";
 
-export default function ProductListItem({title, description, src,btn}) {
-  
+export default function ProductListItem({ id, title, description, src, btn }) {
   return (
-<div className="flex">
-  <div className="block rounded-lg shadow-lg bg-white max-w-xs text-center">
-  <img className="
-              relative
-              left-16
-              p-6 
-              hover:scale-110
-              duration-300
-              h-52
-              w-44
-              " 
-      src= {src} />
-      
-    <h5 className="text-white
-    p-2 w-full
-                text-lg
-                leading-tight 
-                font-medium 
-                mb-2
-                bg-red-500">
-        {title}
-    </h5>
-<div className="p-6">
-    <p className="text-gray-700
-              text-sm
-              mb-4">
-      {description}
-    </p>
-    <div>
-      <MainButton value='See more' styleClass={"w-auto"} /> 
-    </div>
-    </div>
-  </div>
-</div>
-  )
+    <Link href={"/products/product" + id}>
+      <div className="relative rounded-xl shadow-md bg-white">
+        <img
+          className="object-cover object-center h-[300px] w-full"
+          src={src}
+        />
+
+        <div className="p-6 flex justify-between ">
+          <div className="flex-row justify-start">
+            <p className="text-2xl font-bold">{title}</p>
+            <p
+              className="text-gray-700
+              text-sm self-start"
+            >
+              {title}
+            </p>
+          </div>
+          <div>
+            <button className="p-3 bg-gray-100">Voir</button>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
 }
 ProductListItem.propTypes = {
   title: PropTypes.string,

@@ -13,9 +13,11 @@ export default function Home() {
         <LeftSection />
         <RightSection />
       </div>
+    {/***
       <div>
         <Slider/>
       </div>
+    */}
       <div>
         <BlogCards />
       </div>

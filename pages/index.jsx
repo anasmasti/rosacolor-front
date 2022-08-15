@@ -10,6 +10,8 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home />
+
+      <div id='cat'>category</div>
     </div>
   );
 }
