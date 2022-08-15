@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Newsletter() {
   return (
-    <div className="w-full bg-gray-100 flex justify-center p-20 flex-col items-center">
+    <div className="w-full bg-gray-50 flex justify-center p-20 flex-col items-center">
       <div className="p-1 bg-red-100 rounded-sm">
         <p className="text-red-400 text-sm">117+ people joined this week</p>
       </div>
