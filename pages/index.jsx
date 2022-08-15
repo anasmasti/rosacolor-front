@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Home from "../components/home/Home";
+import Home from "../components/home";
 
 export default function index() {
   return (
@@ -10,8 +10,6 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home />
-
-      <div id='cat'>category</div>
     </div>
   );
 }

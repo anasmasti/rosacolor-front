@@ -1,9 +1,8 @@
-const BlogCardItem = ({ title, description, href, icon, color, bgcolor,align }) => {
+const BlogCardItem = ({ title, description, href, color, bgcolor,align }) => {
   return (
-    <div className={`p-12 ${bgcolor}`}>
+    <div className={`p-12 text-center ${bgcolor}`}>
       <a href={href}>
-        <div className={`icon text-${color} text-${align}`}>{icon}</div>
-        <div className={`title text-${color} text-${align} `}>{title}</div>
+        <h3 className={`title text-${color} text-${align} text-3xl`}>{title}</h3>
         <div className={`descrip text-${color} text-${align}`}>{description}</div>
       </a>
     </div>

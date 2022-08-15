@@ -2,11 +2,9 @@ import BlogCardItems from "./BlogCardItems";
 
 const BlogCards = () => {
   return (
-    <>
-      <div className="card-container">
-        <BlogCardItems />
-      </div>
-    </>
+    <section className="z-40">
+      <BlogCardItems />
+    </section>
   );
 };
 

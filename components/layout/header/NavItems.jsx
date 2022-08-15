@@ -15,7 +15,7 @@ export default function NavItems() {
     {
       id: 3,
       title: "Produits",
-      href: "/#cat",
+      href: "/#categories",
     },
     {
       id: 4,

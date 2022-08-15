@@ -1,4 +1,3 @@
-import Newsletter from "../../shared/Newsletter";
 import SocialMediaLinks from "../../shared/SocialMediaLinks";
 import Copyright from "./Copyright";
 import FooterLinks from "./FooterLinks";
@@ -9,7 +8,6 @@ export default function Footer() {
     <footer className="text-center bg-neutral-900 text-white flex justify-center items-center">
       <div className="container px-6 pt-6">
         <SocialMediaLinks />
-        <Newsletter />
         <FooterParagraph />
         <FooterLinks />
         <Copyright />
