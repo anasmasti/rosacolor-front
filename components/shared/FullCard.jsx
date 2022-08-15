@@ -7,7 +7,7 @@ const FullCard = () => {
         <p className="text-blue-400 text-sm">New</p>
       </div>
       <div>
-        <h3 className="text-6xl font-bold">Product with blue color</h3>
+        <h3 className="text-6xl font-bold mb-3">Product with blue color</h3>
         <p className="text-gray-400 text-lg w-2/3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
           harum placeat nulla accusantium explicabo quibusdam quasi beatae rem

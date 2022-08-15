@@ -49,7 +49,6 @@ export default function AboutUs() {
 
   return (
     <div className="max-w-8xl mx-auto container bg-white ">
-      
       <div ref={refContainer} className={`${aboutStyle.about_us_text} p-14 `}>
         <AboutParagraph content={paragraphs} progress={progress} />
       </div>
