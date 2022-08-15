@@ -53,18 +53,16 @@ export default function Info() {
 
   return (
     <div className="bg-white">
-      <div className="container mx-auto">
-        <h1 className="text-3xl font-semibold text-gray-800  lg:text-4xl ">
-          Quelques informations <br /> sur{" "}
-          <span className="underline decoration-red-500">nous</span>
-        </h1>
+        <h3 className="text-3xl font-semibold text-gray-800 lg:text-3xl">
+          Quelques informations sur {" "}
+          <span className="underline decoration-red-400">nous</span>
+        </h3>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-8 xl:mt-12 xl:gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-2 xl:mt-12 xl:gap-8 md:grid-cols-2">
           {infoList.map((info) => (
             <InfoCard key={info.id} title={info.title} content={info.content} src={info.src} />
           ))}
         </div>
-      </div>
     </div>
   );
 }
