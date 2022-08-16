@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import MainButton from "../../shared/MainButton";
 import Link from "next/link";
+import { BsFillEyeFill } from "react-icons/bs";
 
 export default function ProductListItem({ id, title, description, src, btn }) {
   return (
     <Link href={"/products/product" + id}>
-      <div className="relative rounded-xl shadow-md bg-white">
+      <div className="relative rounded-xl shadow-sm bg-white">
         <img
           className="object-cover object-center h-[300px] w-full"
           src={src}
@@ -23,7 +23,7 @@ export default function ProductListItem({ id, title, description, src, btn }) {
             </p>
           </div>
           <div>
-            <button className="p-3 bg-gray-100">Voir</button>
+            <button className="p-3 bg-gray-50 rounded-md"><BsFillEyeFill className="text-gray-500 text-lg" /></button>
           </div>
         </div>
       </div>
