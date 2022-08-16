@@ -58,7 +58,7 @@ export default function Info() {
           <span className="underline decoration-red-400">nous</span>
         </h3>
 
-        <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mt-2 xl:mt-12 xl:gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-2 gap-2 mt-5 md:gap-3 md:grid-cols-3 lg:grid-cols-3 lg:gap-10">
           {infoList.map((info) => (
             <InfoCard key={info.id} title={info.title} content={info.content} src={info.src} />
           ))}

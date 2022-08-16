@@ -3,13 +3,12 @@ import PropTypes from "prop-types";
 
 export default function InfoCard({ title, src, content }) {
   return (
-    <div className="container flex ">
-      <div className="card bg-gray-50 shadow-sm">
-        <div >
-          <div className="imgbox grayscale hover:grayscale-0">
-            <img src={src} className="" />
-          </div>
-          <div className="flex flex-col justify-start p-2">
+    <div className="card bg-gray-50 shadow-sm">
+      <div>
+        <div className=" grayscale hover:grayscale-0">
+          <img src={src} className="" />
+        </div>
+        <div className="flex flex-col justify-start p-2">
           <h4 className="font-bold text-gray-500 mb-2">{title}</h4>
           <p className="text-gray-400">
             {content.map((info) => (
@@ -19,8 +18,6 @@ export default function InfoCard({ title, src, content }) {
               </React.Fragment>
             ))}
           </p>
-
-          </div>
         </div>
       </div>
     </div>

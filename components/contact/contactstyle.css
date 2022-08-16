@@ -10,7 +10,7 @@ input:hover, textarea:hover{
     color:red
 }
 .card{
-    width: 300px;
+    width: 200px;
     height: 300px;
     transition: 0.3s ease-out;
     overflow: hidden;
