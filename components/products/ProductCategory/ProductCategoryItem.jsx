@@ -1,26 +1,30 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
 
-
-export default function ProductCategoryItem({title, src, href,bgcolor,color}) {
+export default function ProductCategoryItem({
+  title,
+  src,
+  href,
+  bgcolor,
+  color,
+}) {
   return (
-    <>
-      <div className="flex justify-center max-w-sm mt-10">
+    <div className="flex justify-center mt-10">
       <Link href={href}>
-
-        <div className="block
+        <div
+          className="block
                     rounded-lg 
                     shadow-lg
-                    max-w-lg
                     cursor-pointer
                     grayscale
                     duration-700
-                    hover:grayscale-0">
+                    hover:grayscale-0"
+        >
+          <img className="h-96" src={src} />
 
-            <img className="h-96" src={src}/>
-          
-            <h5 className={`
+          <h5
+            className={`
                       text-xl 
                       leading-tight 
                       font-medium 
@@ -29,15 +33,15 @@ export default function ProductCategoryItem({title, src, href,bgcolor,color}) {
                       text-white
                       bg-red-500
                       `}
-                      >
-                  {title}
-            </h5>
+          >
+            {title}
+          </h5>
         </div>
-        </Link>
-      </div>
-    </>
-  )
+      </Link>
+    </div>
+  );
 }
+
 ProductCategoryItem.propTypes = {
   title: PropTypes.string,
   href: PropTypes.string,
