@@ -1,16 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
-import MainButton from "../../shared/MainButton";
-import Title from "../../shared/Title";
+
 export default function ProductDetails() {
   return (
-    <div>
-      <Title
-        src="/images/productcategory/bg.png"
-        value1="peinture décorative"
-        value2="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil commodi corporis tempore nesciunt iste ad hic cupiditate exercitationem incidunt molestiae illum cumque fuga harum, eveniet quasi, dolore alias ipsa vero."
-      />
+    <section>
       <div className="">
         <div className="flex justify-center my-12">
           <div className="flex flex-col md:flex-row md:max-w-5xl rounded-lg bg-white">
@@ -18,7 +12,7 @@ export default function ProductDetails() {
             
               <div className=" p-10">
 
-                <h3 className="text-red-500 font-bold text-4xl underline">
+                <h3 className="text-gray-700 font-bold text-4xl">
                   Description:
                 </h3>
                 {/* <button
@@ -44,7 +38,7 @@ export default function ProductDetails() {
                     <p>10 m²/kg</p>
                   </div>
                   
-                  <div className="flex flex-col justify-center items-center text-center w-1/3 p-4 bg-neutral-200">
+                  <div className="flex flex-col justify-center items-center text-center w-1/3 p-4 bg-gray-50">
                     <img src="/icons/dilution.png" className="w-12 h-12"/>
                     <h2 className="text-black">Dilution</h2>
                     <p>A L'eau</p>
@@ -58,7 +52,7 @@ export default function ProductDetails() {
               </div>
             </div>
             <div className="flex-row mb-5 p-10">
-            <h3 className="text-red-500 font-bold text-4xl underline">
+            <h3 className="text-gray-700 font-bold text-4xl">
                   Utilisation:
                 </h3>
                 <p className="text-gray-500 mt-4">
@@ -98,14 +92,8 @@ export default function ProductDetails() {
             </div> */}
           </div>
         </div>
-
-        <Link href="/products/productlist">
-          <a>
-            <MainButton value="Back" styleClass={"mb-5 w-auto"} />
-          </a>
-        </Link>
       </div>
-    </div>
+    </section>
   );
 }
 

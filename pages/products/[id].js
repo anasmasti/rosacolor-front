@@ -3,8 +3,6 @@ import ProductDetails from '../../components/products/productdetails/ProductDeta
 
 export default function productdetails() {
   return (
-    <div>
       <ProductDetails/>
-    </div>
   )
 }
