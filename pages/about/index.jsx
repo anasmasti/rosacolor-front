@@ -9,7 +9,7 @@ export default function About() {
         <div className="lg:mt-3">
           <MainTitle
             value="À propos de Rosacolor"
-            styleClass={`font-bold text-4xl`}
+            styleClass={`font-black text-4xl`}
           />
           <AboutUs />
         </div>

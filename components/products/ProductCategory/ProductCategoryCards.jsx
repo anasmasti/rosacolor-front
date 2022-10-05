@@ -8,6 +8,7 @@ export default function ProductCategoryCards() {
     <div className='mt-24' id='categories'>
       <MainTitle value='Nos Categories' styleClass={`
           text-center
+          underline decoration-red-500
           md:text-2xl
           sm:text-2xl
           lg:text-4xl`}/>

@@ -20,3 +20,10 @@ body {
 #landing-image {
   @apply hidden lg:block xl:block  #{!important};
 }
+
+.main-page{
+  background-image: url("/images/mainpage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}

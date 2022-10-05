@@ -5,7 +5,7 @@ import MainTitle from "./MainTitle";
 
 export default function LeftSection() {
   return (
-    <div className="h-screen flex flex-col justify-center items-center text-center">
+    <div className="main-page h-screen flex flex-col justify-center items-center text-center">
       <MainTitle />
       <MainParagraph />
       <MainButton />
